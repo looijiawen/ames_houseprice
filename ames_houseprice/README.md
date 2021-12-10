@@ -1,1 +1,0 @@
-# ames_houseprice
