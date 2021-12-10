@@ -27,7 +27,7 @@ With a [Ames Housing Dataset](https://www.kaggle.com/c/dsi-us-11-project-2-regre
 2. root-mean-squared-error (RMSE)
 
 
-** Conclusions**
+**Conclusions**
     
 The Lasso model we have designed made a significant improvement as compared to the Baseline Model:
 
@@ -44,7 +44,7 @@ This addresses our problem statement of building a model to accurately predict h
 
 Perhaps, knowing the factors that will influence the house price may more valuable than the price predictions.
     
-![Lasso Coefficients](Lasso Coefficients.png)
+![Lasso Coefficients](https://github.com/looijiawen/ames_houseprice/blob/main/datasets/Lasso%20Coefficients.png)
 
 10 unique house features might be **positively correlated** with our house prices:
     
