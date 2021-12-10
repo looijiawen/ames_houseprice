@@ -1,17 +1,18 @@
-## Project 2 - Predicting Ames Housing Prices with Regression
+# Project 2 - Predicting Ames Housing Prices with Regression
 
-**Background**<br> 
+
+## **Background**<br> 
 
 House prices predictions are useful for *homebuyers* (primary stakeholder) plan their purchase for an ideal house and finances to buy a house. Being able to identify features which the value of the house is sensitive to, they may be in a better position to negotiate price. In addition, house price predictions are also beneficial for *homeowners* (secondary stakeholder) decide how they may want to renovate their houses to improve its marketability and sale price. 
 
-**Problem Statement**  <br> 
+## **Problem Statement**  <br> 
     
 - How may homebuyers in Ames identify houses which have great appreciation value? <br>
 - How may homesellers in Ames improve the values of their house? <br>
 
-**Objective** <br> 
+## **Objective** <br> 
 
-With a [Ames Housing Dataset](https://www.kaggle.com/c/dsi-us-11-project-2-regression-challenge/data) from Kaggle, which consists of 2051 sold houses in Ames, where each of these houses have 80 features that we will leverage upon to find patterns and correlations, we want to -</span>
+With a [Ames Housing Dataset](https://www.kaggle.com/c/dsi-us-11-project-2-regression-challenge/data) from Kaggle, which consists of 2051 sold houses in Ames, where each of these houses have 80 features ([Data Dictionary](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt)) that we will leverage upon to find patterns and correlations, we want to -</span>
    
     
 - **identify features** which significantly affect housing prices
@@ -20,27 +21,27 @@ With a [Ames Housing Dataset](https://www.kaggle.com/c/dsi-us-11-project-2-regre
 - identify features of a house which affects its value
 
 
+
 **Evaluation** of model performance by -
     
     
-1. coefficient of discrimination ($R^2$) 
+1. coefficient of discrimination (R2 Score) 
 2. root-mean-squared-error (RMSE)
 
 
-**Conclusions**
+## **Conclusions**
     
 The Lasso model we have designed made a significant improvement as compared to the Baseline Model:
 
-
 | Model: | Baseline | Lasso |
 | --- | --- | --- | 
-| $R^2 $ score | 0.840 | 0.9183 |
+| R2 Score | 0.840 | 0.9183 |
 | RMSE | 31609 | 21195 |
 
 
 This addresses our problem statement of building a model to accurately predict housing prices.
 
-**Recommendations**
+## **Recommendations**
 
 Perhaps, knowing the factors that will influence the house price may more valuable than the price predictions.
     
@@ -83,16 +84,9 @@ Two-cents worth for homebuyers:
 - Avoid old houses in class D neighborhoods
 - Buy houses that are built not too long ago, since prices deteriorate with age
 
-**Model Caveats**
+## **Caveats**
 
 
 Sensitive to context; Our model is unlikely to be generalizable to other cities. The features we chose to build the model might not be the most ideal selection to determine house prices, because we did not have enough domain knowledge to perform manual feature selection.  In reality, two populations in different cities or countries may not share the same considerations for desirable features in a house. 
 
 To make the model more generalizable, we could cut down on the number of variables and use only general features found and assessed within most houses in the world, such as distance to a transport system. This would of course come at an expense of the predictive power of the model.
-
-
-**Possible Enhancements**
- 
-- Testing other predictive models such as random forest, support vector machines, since we are limited to only linear  regression here
-- Obtaining more housing data, preferably recent, to update the model and expose it to more variations
-- Obtaining more general features of the house such as crime rate, ethnicity, distance to amenities or facilities
